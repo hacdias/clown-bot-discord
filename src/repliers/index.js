@@ -11,7 +11,7 @@ const wrapLog = (fn) => async (msg) => {
 }
 
 module.exports = async () => {
-  debug('Loading repliers')
+  debug('Loading')
 
   let files = await fs.readdir(__dirname)
   files = files.filter(name => name !== 'index.js')
@@ -32,6 +32,6 @@ module.exports = async () => {
     }
   }
 
-  debug('Repliers loaded')
+  debug('Loaded')
   return repliers
 }

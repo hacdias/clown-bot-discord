@@ -2,8 +2,16 @@ const dialogflow = require('dialogflow')
 const sessionClient = new dialogflow.SessionsClient()
 const sessions = {}
 const debug = require('debug')('bot:dialogflow')
+const { client } = require('../discord')
 
-module.exports = async (id, query) => {
+module.exports = async (msg) => {
+  if (!msg.isMentioned(client.user.id)) {
+    return
+  }
+
+  const id = msg.author.username
+  const query = msg.content
+
   try {
     if (!sessions[id]) {
       sessions[id] = sessionClient.sessionPath(process.env.PROJECT_ID, id)
