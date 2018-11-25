@@ -39,7 +39,7 @@ const onMessage = async (msg, parsers, repliers) => {
   }, res)
 
   if (repliers[res.intent]) {
-    repliers[res.intent](msg, ...res.args)
+    repliers[res.intent](msg, res.answer, ...res.args)
   } else if (res.answer) {
     msg.reply(res.answer)
   }

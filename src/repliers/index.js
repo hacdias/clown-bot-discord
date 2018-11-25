@@ -1,9 +1,9 @@
 const fs = require('fs-extra')
 const debug = require('debug')('bot:repliers')
 
-const wrapLog = (fn) => async (msg) => {
+const wrapLog = (fn) => async (msg, answer) => {
   try {
-    await fn(msg)
+    await fn(msg, answer)
   } catch (e) {
     debug(e)
     msg.reply('sorry, but something wrong happened 😢')
