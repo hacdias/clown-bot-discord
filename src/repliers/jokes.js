@@ -1,6 +1,6 @@
 const fetch = require('node-fetch')
 
-const chuck = async (msg) => {
+const chuck = async (msg, answer) => {
   const username = msg.author.username
   const parts = username.split(' ')
   let url = 'http://api.icndb.com/jokes/random'
@@ -11,18 +11,32 @@ const chuck = async (msg) => {
 
   const res = await fetch(url)
   const data = await res.json()
-  msg.reply(data.value.joke)
+  let reply = data.value.joke
+
+  if (answer) {
+    reply = `${answer} ${reply}`
+  }
+
+  msg.reply(reply)
 }
 
-const dad = async (msg) =>{
+const dad = async (msg, answer) => {
   const res = await fetch('https://icanhazdadjoke.com/', {
     headers: { 'Accept': 'application/json' }
   })
   const data = await res.json()
-  msg.reply(data.joke)
+  let reply = data.joke
+
+  if (answer) {
+    reply = `${answer} ${reply}`
+  }
+
+  msg.reply(reply)
 }
 
 module.exports = {
-  chuck,
-  dad
+  'chuck': chuck,
+  'chuck.more': chuck,
+  'dad': dad,
+  'dad.more': dad
 }
