@@ -7,8 +7,8 @@ const onReady = () => {
 
   client.user.setPresence({
     game: {
-      name: 'with your life',
-      type: 'PLAYING'
+      name: 'you',
+      type: 'WATCHING'
     },
     status: 'online'
   })
