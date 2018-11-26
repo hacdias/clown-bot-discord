@@ -1,3 +1,3 @@
-module.exports = (msg, answer, what) => {
-  msg.reply(what, { tts: true })
+module.exports = ({ msg, query }) => {
+  msg.channel.send(query, { tts: true })
 }

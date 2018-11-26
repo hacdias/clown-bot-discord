@@ -22,7 +22,7 @@ const makeEmbed = (data) => {
   return embed
 }
 
-const latest = async (msg) => {
+const latest = async ({ msg }) => {
   await fetchLatest()
 
   msg.reply('here\'s the latest XKCD comic', {
@@ -30,7 +30,7 @@ const latest = async (msg) => {
   })
 }
 
-const random = async (msg) => {
+const random = async ({ msg }) => {
   await fetchLatest()
 
   const num = Math.floor(Math.random() * latestData.num) + 1
@@ -48,7 +48,12 @@ const random = async (msg) => {
   })
 }
 
-module.exports = {
-  latest,
-  random
+module.exports = async (ctx) => {
+  const type = ctx.query.split(' ', 1)[0]
+
+  if (type === 'latest') {
+    return latest(ctx)
+  } else if (type === 'random') {
+    return random(ctx)
+  }
 }

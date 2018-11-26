@@ -29,10 +29,13 @@ module.exports = async (msg) => {
 
     const response = await sessionClient.detectIntent(request)
     const result = response[0].queryResult
+    const rawIntent = result.intent ? result.intent.displayName : null
+    const intent = rawIntent ? rawIntent.split(' ', 1)[0] : null
 
     return {
       answer: result.fulfillmentText,
-      intent: result.intent ? result.intent.displayName : null
+      intent: intent,
+      query: rawIntent ? rawIntent.slice(intent.length).trim() : null
     }
   } catch (e) {
     debug(e)

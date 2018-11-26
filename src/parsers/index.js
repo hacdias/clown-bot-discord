@@ -8,6 +8,6 @@ module.exports = async () => {
     .filter(name => name !== 'index.js')
     .map(name => require(`./${name}`))
 
-  debug('Loaded')
+  debug('Loaded %o', parsers)
   return parsers
 }

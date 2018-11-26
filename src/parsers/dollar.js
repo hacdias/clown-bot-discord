@@ -1,18 +1,10 @@
 module.exports = (msg) => {
-  if (!msg.content.startsWith('$')) {
+  if (!msg.content.startsWith('!')) {
     return null
   }
 
-  if (msg.content.startsWith('$mic')) {
-    return {
-      intent: 'mic',
-      args: [
-        msg.content.slice(4).trim()
-      ]
-    }
-  }
+  const intent = msg.content.slice(1).split(' ', 1)[0]
+  const query = msg.content.slice(intent.length + 1).trim()
 
-  return {
-    intent: msg.content.slice(1).replace(' ', '.')
-  }
+  return { intent, query }
 }

@@ -32,17 +32,27 @@ const onMessage = async (msg, parsers, repliers) => {
     return
   }
 
+  msg.channel.startTyping()
+
   res = Object.assign({
     intent: null,
     answer: null,
-    args: []
+    query: null
   }, res)
 
   if (repliers[res.intent]) {
-    repliers[res.intent](msg, res.answer, ...res.args)
+    await repliers[res.intent]({
+      query: res.query,
+      answer: res.answer,
+      msg: msg
+    })
   } else if (res.answer) {
     msg.reply(res.answer)
+  } else {
+    msg.reply('sorry, I did not quite understand you 😢')
   }
+
+  msg.channel.stopTyping()
 }
 
 module.exports = async (token, parsers, repliers) => {

@@ -1,37 +1,26 @@
 const fs = require('fs-extra')
 const debug = require('debug')('bot:repliers')
 
-const wrapLog = (fn) => async (msg, answer) => {
+const wrapLog = (fn) => async (ctx) => {
   try {
-    await fn(msg, answer)
+    await fn(ctx)
   } catch (e) {
     debug(e)
-    msg.reply('sorry, but something wrong happened 😢')
+    ctx.msg.reply('sorry, but something wrong happened 😢')
   }
 }
 
 module.exports = async () => {
   debug('Loading')
 
-  let files = await fs.readdir(__dirname)
-  files = files.filter(name => name !== 'index.js')
-  files = files.map(name => name.replace('.js', ''))
-
   const repliers = {}
 
-  for (const file of files) {
-    const mod = require(`./${file}.js`)
-
-    if (typeof mod === 'function') {
-      repliers[file] = mod
-      continue
-    }
-
-    for (const fn of Object.keys(mod)) {
-      repliers[`${file}.${fn}`] = wrapLog(mod[fn])
-    }
+  for (const file of await fs.readdir(__dirname)) {
+    if (file === 'index.js') continue
+    const name = file.replace('.js', '')
+    repliers[name] = wrapLog(require(`./${file}`))
   }
 
-  debug('Loaded')
+  debug('Loaded %o', repliers)
   return repliers
 }
