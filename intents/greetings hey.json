@@ -1,0 +1,32 @@
+{
+  "id": "128fb7ed-2efc-4088-b5cc-17afdce603ed",
+  "name": "greetings hey",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "hello!",
+            "hi! How\u0027re you?",
+            "hey! How\u0027re you doing?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1543248060,
+  "fallbackIntent": false,
+  "events": []
+}

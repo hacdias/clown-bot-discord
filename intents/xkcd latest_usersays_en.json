@@ -1,0 +1,60 @@
+[
+  {
+    "id": "f005b256-1f35-490e-b74b-e0cf64d54ec3",
+    "data": [
+      {
+        "text": "get me the latest xkcd",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543150730
+  },
+  {
+    "id": "0d3ec213-74df-4883-a8ab-35da05f5f6c4",
+    "data": [
+      {
+        "text": "show me ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027s\u0027s xkcd comic",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543150730
+  },
+  {
+    "id": "6e7ab22c-cad6-44c4-8b4d-e7342ec72259",
+    "data": [
+      {
+        "text": "gimme latest xkcd comic",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543150730
+  },
+  {
+    "id": "526f5698-72a0-4f75-8684-fb673729803c",
+    "data": [
+      {
+        "text": " show me the latest xkcd comic",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543150730
+  }
+]

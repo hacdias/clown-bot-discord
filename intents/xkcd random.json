@@ -1,0 +1,28 @@
+{
+  "id": "0bfbb416-62bd-4b93-ab45-be41bf944bec",
+  "name": "xkcd random",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1543248119,
+  "fallbackIntent": false,
+  "events": []
+}

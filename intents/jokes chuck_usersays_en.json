@@ -1,0 +1,92 @@
+[
+  {
+    "id": "d390a13a-5301-431f-bd3a-2b67638b4ced",
+    "data": [
+      {
+        "text": "get a ",
+        "userDefined": false
+      },
+      {
+        "text": "chuck",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " norris joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543172964
+  },
+  {
+    "id": "ce368627-b523-400d-a003-f38c5a485540",
+    "data": [
+      {
+        "text": "Could you give me a chuck norris joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543159230
+  },
+  {
+    "id": "38f4c9b5-d20b-4ec3-882e-87e4c59871ca",
+    "data": [
+      {
+        "text": "I want a ",
+        "userDefined": false
+      },
+      {
+        "text": "chuck",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543172964
+  },
+  {
+    "id": "eb91344f-8cc3-4324-b30c-101fbddf8133",
+    "data": [
+      {
+        "text": "I would like a chuck norris joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543159230
+  },
+  {
+    "id": "1a50314c-e90f-4c72-83b3-04bea549383b",
+    "data": [
+      {
+        "text": "I want a chuck norris joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543159230
+  },
+  {
+    "id": "d5fa7ff2-950f-443a-8289-31f35f2bfc6a",
+    "data": [
+      {
+        "text": "tell me a chuck norris joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543159230
+  }
+]

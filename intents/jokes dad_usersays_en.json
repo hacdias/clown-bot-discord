@@ -1,0 +1,62 @@
+[
+  {
+    "id": "5142ebd2-ada0-4c5f-b90d-1c566408d3a4",
+    "data": [
+      {
+        "text": "give me a random joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543162367
+  },
+  {
+    "id": "45684b5a-0285-437d-8bc2-58517b0e4679",
+    "data": [
+      {
+        "text": "dad joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543162367
+  },
+  {
+    "id": "adadb057-15af-4e01-b678-fc732e2de5d4",
+    "data": [
+      {
+        "text": "i wanna know a dad joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543162367
+  },
+  {
+    "id": "27101a29-ccf5-4e2b-b5ab-014968b29434",
+    "data": [
+      {
+        "text": "tell me a joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543162367
+  },
+  {
+    "id": "60cdc084-6bc9-4b01-bbb1-73f9e04e8695",
+    "data": [
+      {
+        "text": "tell me a dad joke",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1543162367
+  }
+]

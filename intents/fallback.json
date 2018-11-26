@@ -1,0 +1,31 @@
+{
+  "id": "73f777c9-345b-4550-9179-3cdff600eede",
+  "name": "fallback",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "sorry, I didn\u0027t quite understand you 😢",
+            "are you sure that\u0027s what you meant?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1543174819,
+  "fallbackIntent": true,
+  "events": []
+}

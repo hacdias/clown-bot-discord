@@ -1,0 +1,37 @@
+{
+  "id": "9225e5e8-1651-41a6-ba2a-c19985a7e576",
+  "name": "xkcd latest",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "83fff92c-6539-4c8e-a532-71cdc357b98e",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1543248130,
+  "fallbackIntent": false,
+  "events": []
+}

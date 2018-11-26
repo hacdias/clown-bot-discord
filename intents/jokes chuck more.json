@@ -1,0 +1,37 @@
+{
+  "id": "13b1e2cb-7524-4dbd-80e7-5b9d070a60bc",
+  "parentId": "bcea4ca4-5ad7-4985-aadc-37032a5dbc21",
+  "rootParentId": "bcea4ca4-5ad7-4985-aadc-37032a5dbc21",
+  "name": "jokes chuck more",
+  "auto": true,
+  "contexts": [
+    "jokeschuck-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "jokeschuck.jokeschuck-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "here\u0027s another one then:",
+            "one more:",
+            "I can stay here for the rest of the day:"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1543248092,
+  "fallbackIntent": false,
+  "events": []
+}

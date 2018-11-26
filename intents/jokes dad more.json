@@ -1,0 +1,36 @@
+{
+  "id": "27c5b527-74d4-4689-a16a-8ef07642c63b",
+  "parentId": "20c1c08a-83e4-4a95-8384-82d4319196c9",
+  "rootParentId": "20c1c08a-83e4-4a95-8384-82d4319196c9",
+  "name": "jokes dad more",
+  "auto": true,
+  "contexts": [
+    "jokesdad-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "jokesdad.jokesdad-more",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "glad you liked it! Here\u0027s another one:",
+            "as you can see, I\u0027m a good joke teller! One more:"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1543248101,
+  "fallbackIntent": false,
+  "events": []
+}
