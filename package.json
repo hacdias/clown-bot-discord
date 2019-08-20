@@ -17,6 +17,6 @@
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
-    "standard": "^13.0.1"
+    "standard": "^14.0.0"
   }
 }
